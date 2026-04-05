@@ -3,8 +3,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export default function App() {
   const { scrollY } = useScroll();
 
-  const heroImageY = useTransform(scrollY, [0, 600], [0, 140]);
-  const heroCopyY = useTransform(scrollY, [0, 500], [0, -40]);
+  const heroImageY = useTransform(scrollY, [0, 700], [0, 140]);
+  const heroCopyY = useTransform(scrollY, [0, 500], [0, -36]);
 
   const pillars = [
     {
@@ -69,7 +69,7 @@ export default function App() {
             className="h-full w-full"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(15,12,10,0.38), rgba(15,12,10,0.68)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=80')"
+                "linear-gradient(rgba(15,12,10,0.38), rgba(15,12,10,0.68)), url('/house-hero.jpg')"
             }}
           />
         </motion.div>
@@ -136,7 +136,7 @@ export default function App() {
           <div className="rounded-[1.5rem] border border-[#e1d7ca] bg-white p-6 shadow-[0_12px_40px_rgba(24,21,18,0.06)]">
             <p className="text-3xl font-semibold tracking-tight">0.9 acre</p>
             <p className="mt-2 text-sm leading-6 text-[#5d564e]">
-              Enough outdoor breathing room to support quiet gatherings and hospitality. 
+              Enough outdoor breathing room to support quiet gatherings and hospitality.
             </p>
           </div>
           <div className="rounded-[1.5rem] border border-[#e1d7ca] bg-white p-6 shadow-[0_12px_40px_rgba(24,21,18,0.06)]">
@@ -172,10 +172,12 @@ export default function App() {
           <div className="space-y-6 text-lg leading-8 text-[#5d564e]">
             <p>
               The Dandelion House exists to offer a simple invitation: come as you are,
-              be welcomed, and receive rest, prayer, and presence in a place that feels lived in rather than institutional.
+              be welcomed, and receive rest, prayer, and presence in a place that feels
+              lived in rather than institutional.
             </p>
             <p>
-              This is not a program first. It is a home first. That is what gives the ministry its warmth, credibility, and depth.
+              This is not a program first. It is a home first. That is what gives the
+              ministry its warmth, credibility, and depth.
             </p>
           </div>
         </div>
@@ -218,7 +220,7 @@ export default function App() {
               className="h-full w-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(16,13,10,0.14), rgba(16,13,10,0.28)), url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80')"
+                  "linear-gradient(rgba(16,13,10,0.14), rgba(16,13,10,0.28)), url('/house-living.jpg')"
               }}
             />
           </div>
@@ -258,7 +260,7 @@ export default function App() {
 
       <motion.section
         {...sectionFade}
-        className="border-y border-[#e3d9cc] bg-[#efe7db]"
+        className="overflow-hidden border-y border-[#e3d9cc] bg-[#efe7db]"
       >
         <div className="mx-auto grid max-w-7xl gap-0 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="min-h-[440px] lg:min-h-full">
@@ -266,7 +268,7 @@ export default function App() {
               className="h-full w-full bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "linear-gradient(rgba(17,14,11,0.18), rgba(17,14,11,0.32)), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=80')"
+                  "linear-gradient(rgba(17,14,11,0.18), rgba(17,14,11,0.32)), url('/house-exterior.jpg')"
               }}
             />
           </div>
@@ -320,7 +322,8 @@ export default function App() {
             A welcoming place, rooted in Christ.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#d6dfd8]">
-            The Dandelion House is presented as a hospitality-centered Christian ministry concept built around home, table, prayer, and faithful presence.
+            The Dandelion House is presented as a hospitality-centered Christian ministry concept
+            built around home, table, prayer, and faithful presence.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
